@@ -1,0 +1,6 @@
+print('-='*50)
+n = int(input('Digite um numero: '))
+for c in range(1, 11):
+    resul = n * c
+    print('{} x {} = {}'.format(n, c, resul ))
+print('-='*50)
