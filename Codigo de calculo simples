@@ -1,0 +1,38 @@
+n = int(input('Digite um valor: '))
+m = int(input('Digite um valor: '))
+opcao = 0
+soma = 0
+mult = 0
+maior = 0
+while opcao != 5:
+    print('===='*20)
+    print('''
+    [1] somar
+    [2] multiplicar
+    [3] maior
+    [4] novo valor
+    [5] sair do programa
+    ''')
+    opcao = int(input('Digite sua opcao: '))
+    print('===='*20)
+
+    if opcao == 1:
+        soma = n + m
+        print('a soma de {} e {} é {} '.format(n, m, soma))
+    elif opcao == 2:
+        mult = n * m
+        print('A multiplicação de {} e {} é {}'.format(n, m, mult))
+    elif opcao == 3:
+        if n > m:
+            print('entre {} e {}, {} é maior'.format(n, m, n))
+        else:
+            print('entre {} e {}, {} é maior'.format(n, m, m))
+    elif opcao == 4:
+            print('Digite novamente os valores ')
+            n = int(input('Digite um valor: '))
+            m = int(input('Digite um valor: '))
+    elif opcao == 5:
+        print('Saindo do programa')
+    else:
+        print('Opção Invalida! tente Novamente!')
+print('Finalizando!')
